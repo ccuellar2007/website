@@ -1,15 +1,29 @@
-body, html {
-    height: 100%;
+.top-nav-collapse {
+    background-color: #78909c !important;
 }
-.bg {
-    /* The image used */
-    background-image: url("../images/_MG_5897.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}
+h1 {
+    letter-spacing: 8px;
+}
+h5 {
+    letter-spacing: 3px;
+}
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px;
+    }
 }
