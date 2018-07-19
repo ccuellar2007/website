@@ -1,0 +1,16 @@
+html,
+body,
+header,
+#intro {
+	height: 100;
+	color: red;
+}
+
+#intro {
+	background: "../img/_MG_5897.jpg" no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
