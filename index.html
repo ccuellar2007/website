@@ -227,13 +227,16 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+
+            // This function changes the color of the navbar elements and the shading of the active link when you scroll past the background image to the main section of my website
             $(document).scroll(function() {
                 var scroll_pos = $(this).scrollTop();
-                console.log(scroll_pos);
                 if(scroll_pos > 730) {
                     $(".nav-link").css('color', 'black');
+                    // $(".nav-item.active").css("background-color: red");
                 } else {
                     $(".nav-link").css('color', 'white');
+                    // $(".nav-item.active").css("background-color");
                 }
             });
 
