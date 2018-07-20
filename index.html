@@ -157,7 +157,32 @@
 
             <!-- Section: Examples -->
             <section id="examples">
-                
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-">
+
+                    </div>
+                    <!-- Grid column -->                                        
+                    
+
+                </div>
+                <!-- Grid row -->
+
                 
             </section>
             <!-- Section: Examples -->
@@ -199,6 +224,22 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).scroll(function() {
+                var scroll_pos = $(this).scrollTop();
+                console.log(scroll_pos);
+                if(scroll_pos > 730) {
+                    $(".nav-link").css('color', 'black');
+                } else {
+                    $(".nav-link").css('color', 'white');
+                }
+            });
+
+
+        });
+    </script>
 </body>
 
 </html>
